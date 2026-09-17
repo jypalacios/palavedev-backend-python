@@ -34,6 +34,7 @@ services:
     volumes:
       - ./app:/app/app
       - python_logs:/logs
+      - backend_repository:/app/repository
 
     networks:
       - dev1_network
@@ -48,3 +49,4 @@ networks:
 volumes:
 
   python_logs:
+  backend_repository:
